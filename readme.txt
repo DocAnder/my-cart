@@ -14,3 +14,6 @@ Gerenciamento de estado com hooks.
 Comandos úteis:
 
 Gerara novo projeto básico/vazio com expo -> npx create-expo-app@latest --template blank
+
+Instala o splash screen, útil para "feedback" enquanto carrega recursos do app -> npm install expo-splash-screen
+Doc: https://docs.expo.dev/versions/latest/sdk/splash-screen/
