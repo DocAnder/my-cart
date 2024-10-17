@@ -2,6 +2,7 @@ import { Image, Dimensions, StyleSheet, Text, View } from "react-native"
 
 import topo from '../../../assets/topo.png'
 import logo from '../../../assets/logo.png'
+import { Texto } from "../components/text/Texto";
 
 const width = Dimensions.get('screen').width;
 
@@ -9,19 +10,21 @@ const Basket = () => {
     return(
         <>
         <Image source={topo} style={style.topo}/>
-        <Text style={style.titulo}>Peido Violento!</Text>
+        <Texto style={style.titulo}>Detalhes da cesta</Texto>
         <View style={style.container}>
-            <Text style={style.nome}>Cesta de Verduras</Text>
+            <Texto style={style.nome}>Cesta de Verduras</Texto>
             <View style={style.containerImg}>
                 <Image source={logo} style={style.logo}/>
-                <Text style={style.nomeFazenda}>Jenny Jack Farm</Text>
+                <Texto style={style.nomeFazenda}>Jenny Jack Farm</Texto>
             </View>
-            <Text style={style.descricao}>Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha.</Text>
-            <Text style={style.preco}>R$40.00</Text>
-        </View>
+            <Texto style={style.descricao}>
+                Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha.
+            </Texto>
+            <Texto style={style.preco}>R$40.00</Texto>
+        </View> 
         </>
     )
-}
+}   
 
 
 export {Basket}
@@ -40,8 +43,8 @@ const style = StyleSheet.create({
         textAlign:"center",
         paddingTop:15,
         color:"white",
-        fontWeight:"bold",
-        lineHeight:26
+        lineHeight:26,
+        fontWeight: "bold"
     },
 
     container:{
@@ -61,7 +64,8 @@ const style = StyleSheet.create({
         lineHeight:26,
         paddingBottom: 5,
         paddingLeft: 15,
-        alignSelf: "center"
+        alignSelf: "center",
+        fontFamily: "MontserratRegular"
     },
 
     descricao:{
