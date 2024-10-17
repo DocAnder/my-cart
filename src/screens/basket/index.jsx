@@ -6,13 +6,12 @@ import { Detalhes } from "./components/detalhes";
 
 const width = Dimensions.get('screen').width;
 
-const Basket = () => {
+const Basket = ({topo, detalhes}) => {
     return(
         <>
-        <Topo />
-            
+        <Topo {...topo}/>            
         <View style={style.container}>
-            <Detalhes />
+            <Detalhes {...detalhes}/>
         </View> 
         </>
     )

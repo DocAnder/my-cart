@@ -1,20 +1,19 @@
 import { Image, StyleSheet, View } from "react-native"
 import { Texto } from "../../components/text/Texto"
 
-import logo from '../../../../assets/logo.png'
 
-const Detalhes = () => {
+const Detalhes = ({ nome, logoFazenda, nomeFazenda, descricao, preco  }) => {
     return (
         <>
-            <Texto style={style.nome}>Cesta de Verduras</Texto>
+            <Texto style={style.nome}> { nome } </Texto>
             <View style={style.containerImg}>
-                <Image source={logo} style={style.logo}/>
-                <Texto style={style.nomeFazenda}>Jenny Jack Farm</Texto>
+                <Image source={logoFazenda} style={style.logo}/>
+                <Texto style={style.nomeFazenda}>{ nomeFazenda }</Texto>
             </View>
             <Texto style={style.descricao}>
-                Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha.
+            { descricao }
             </Texto>
-            <Texto style={style.preco}>R$40.00</Texto>
+            <Texto style={style.preco}>{ preco }</Texto>
         </>
     )
 }
@@ -54,8 +53,8 @@ const style = StyleSheet.create({
     },
 
     logo:{
-        width: 32,
-        height: 32,
+        width: 40,
+        height: 40,
         marginLeft: 10,
         alignSelf: "center"
     }

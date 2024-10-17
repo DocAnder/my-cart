@@ -5,11 +5,11 @@ import { Texto } from "../../components/text/Texto";
 
 const width = Dimensions.get('screen').width;
 
-const Topo = () => {
+const Topo = ({ titulo }) => {
     return (
         <>
             <Image source={img2} style={style.topo}/>
-            <Texto style={style.titulo}>Detalhes da cesta</Texto>            
+            <Texto style={style.titulo}>{ titulo }</Texto>            
         </>
     )
 }
@@ -26,7 +26,7 @@ const style = StyleSheet.create({
         position:"absolute",
         textAlign:"center",
         paddingTop:15,
-        color:"black",
+        color:"white",
         lineHeight:26,
         fontWeight: "bold"
     },

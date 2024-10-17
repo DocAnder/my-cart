@@ -1,7 +1,7 @@
 
 import { StyleSheet, View, StatusBar, SafeAreaView } from 'react-native';
 import { Basket } from './src/screens/basket';
-
+import { cesta } from './src/mocks/cesta'
 import { useFonts, Montserrat_400Regular, Montserrat_700Bold } from '@expo-google-fonts/montserrat'; 
 
 export default function App() {
@@ -17,8 +17,8 @@ export default function App() {
 
   return (
     <SafeAreaView>
-      <Basket />
       <StatusBar style="auto" />
+      <Basket {...cesta}/>
     </SafeAreaView>
   );
 }
