@@ -1,8 +1,9 @@
-import { Image, StyleSheet, View } from "react-native"
+import { Button, Image, StyleSheet, View } from "react-native"
 import { Texto } from "../../components/text/Texto"
+import { Botao } from "../../components/botao/botao"
 
 
-const Detalhes = ({ nome, logoFazenda, nomeFazenda, descricao, preco  }) => {
+const Detalhes = ({ nome, logoFazenda, nomeFazenda, descricao, preco, botao  }) => {
     return (
         <>
             <Texto style={style.nome}> { nome } </Texto>
@@ -14,6 +15,8 @@ const Detalhes = ({ nome, logoFazenda, nomeFazenda, descricao, preco  }) => {
             { descricao }
             </Texto>
             <Texto style={style.preco}>{ preco }</Texto>
+            {/* <Button title={botao}/> */}
+            <Botao botao={botao} />
         </>
     )
 }

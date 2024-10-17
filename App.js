@@ -42,7 +42,7 @@ export default function App() {
     <SafeAreaView>
       <View onLayout={onLayout}>
         <StatusBar style="auto" />
-        <Basket {...cesta}/>
+        <Basket {...cesta}/>        
       </View>
     </SafeAreaView>
   );
