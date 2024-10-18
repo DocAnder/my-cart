@@ -1,19 +1,19 @@
-Estudos Iniciais React Native
-
-Este repositório contém os primeiros passos dos meus estudos com React Native.
+Estudo Inicial React Native
+Primeiros passos estudando com React Native.
 
 Objetivo
-Documentar o aprendizado sobre os fundamentos do React Native, explorando componentes, navegação, hooks, servindo como base de consultas simples para futuras aplicações mais avançadas no desenvolvimento mobile.
+Documentar o aprendizado e anotações úteis para futura consulta.
 
-Funcionalidades
-Estruturação de projetos React Native.
-Utilização de componentes nativos.
-Gerenciamento de estado com hooks.
+## Comandos úteis:
 
+Gerar novo projeto básico/vazio com expo -> npx create-expo-app@latest --template blank
 
-Comandos úteis:
-
-Gerara novo projeto básico/vazio com expo -> npx create-expo-app@latest --template blank
-
-Instala o splash screen, útil para "feedback" enquanto carrega recursos do app -> npm install expo-splash-screen
+Instalar o splash screen -> npm install expo-splash-screen
+Obs: Útil para "feedback" enquanto carrega recursos do app
 Doc: https://docs.expo.dev/versions/latest/sdk/splash-screen/
+
+
+## Conclusão: 
+
+Curso descontinuado, haja vista estar desatualizado. 
+Útil ainda de certa forma para prática de questões mais simples. 
